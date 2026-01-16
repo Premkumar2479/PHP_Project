@@ -1,25 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Register</h1>
-        <form action="/submit_registration" method="POST">
-            <label for="username">Username:</label><br>
-            <input type="text" id="username" name="username" required><br><br>
-            
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" required><br><br>
-            
-            <input type="submit" value="Register">
-        </form>
-    </div>
+
+<h2>Registration Form</h2>
+
+<form action="register.php" method="POST" onsubmit="return validateForm()">
+    <input type="text" name="name" id="name" placeholder="Full Name">
+    <input type="email" name="email" id="email" placeholder="Email">
+    <input type="password" name="password" id="password" placeholder="Password">
+    <input type="password" id="confirm" placeholder="Confirm Password">
+    <button type="submit">Register</button>
+</form>
+
+<script src="script.js"></script>
 </body>
 </html>
