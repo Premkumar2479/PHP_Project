@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enquiry Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Enquiry Form</h2>
+
+<form action="submit.php" method="POST" onsubmit="return validateForm()">
+    <input type="text" name="name" id="name" placeholder="Your Name">
+    <input type="email" name="email" id="email" placeholder="Your Email">
+    <input type="text" name="phone" id="phone" placeholder="Phone Number">
+    <textarea name="message" id="message" placeholder="Your Message"></textarea>
+    <button type="submit">Submit Enquiry</button>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
