@@ -1,10 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "registration_db";
-
-$conn = mysqli_connect($servername, $username, $password, $database);
+$conn = mysqli_connect("localhost", "root", "", "registration_db");
 
 if (!$conn) {
     die("Database connection failed");
